@@ -1,11 +1,13 @@
 
+import es.studium.Vista.VistaMenuPrincipal;
+import es.studium.Controlador.ControladorMenuPrincipal;
+
 public class main {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Conexion conexion = new Conexion();
-		VistaMenuprincipal vistaMenu = new VistaMenuprincipal();
-		vistaMenu.setVisible(true);
-	}
-
+    public static void main(String[] args) {
+        VistaMenuPrincipal vista = new VistaMenuPrincipal();
+        ControladorMenuPrincipal controlador = new ControladorMenuPrincipal(vista);
+        
+        // Hacer visible la vista
+        vista.setVisible(true);
+    }
 }
